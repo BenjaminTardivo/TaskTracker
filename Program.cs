@@ -14,10 +14,18 @@ namespace TaskTracker
         {
             TaskRepository taskRepository = new TaskRepository();
 
+            WelcomeMessage();
+
             while (true)
             {
                 Console.ReadLine();
             }
+        }
+
+        static void WelcomeMessage()
+        {
+            Console.WriteLine("========== Welcome to TaskTracker app ==========\n");
+            Console.WriteLine("type help to list all commands");
         }
     }
 }
