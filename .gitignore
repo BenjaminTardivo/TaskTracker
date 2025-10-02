@@ -1,3 +1,6 @@
 #IDE files
 .vscode/
 .fake
+
+#Data
+taskdata.json
