@@ -10,10 +10,11 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("TaskTracker")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("BenjaminTardivo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("Simple CLI Task Tracker")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+34cc89794ae16f87f8b68abaa27bf1d1e68c56fb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+174c08539ecf8f62ffa0ba899e57d8ff00e00208")]
 [assembly: System.Reflection.AssemblyProductAttribute("TaskTracker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TaskTracker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
