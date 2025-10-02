@@ -15,7 +15,7 @@
 ### Package the tool
 
 ```
-  dotnet pack -C Release
+  dotnet pack -c Release
 ```
 
 ### Global Install
