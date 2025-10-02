@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+Djtoreez8o=",
+  "dgSpecHash": "8E3rVkYaDDEEshpVxQNEHuFLe8OJxzBrqX7adfzsBcE79S9uDYkUzy8u6+kvFDE0zgwLyKZDNxYqiCJ80MTa1Q==",
   "success": true,
-  "projectFilePath": "/run/media/tardi/1aca8682-e484-4ebb-9e4c-935f521a5c54/CSharp/TaskTracker/TaskTracker.csproj",
+  "projectFilePath": "/run/media/tardi/Marta/CSharp/TaskTracker/TaskTracker.csproj",
   "expectedPackageFiles": [
     "/home/tardi/.nuget/packages/microsoft.extensions.configuration/8.0.0/microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "/home/tardi/.nuget/packages/microsoft.extensions.configuration.abstractions/8.0.0/microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",

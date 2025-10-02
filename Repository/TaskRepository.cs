@@ -72,8 +72,6 @@ namespace TaskTracker.Repository
 
                 await UpdateJson(userTasks);
 
-                Console.WriteLine($"Task {task.description} succesfully deleted.");
-
                 return task;
             }
             catch (Exception ex)
@@ -97,7 +95,8 @@ namespace TaskTracker.Repository
         {
             var userTasks = await GetTasksFromJson();
 
-            if (Enum.TryParse<Status>(status, out var parsedStatus))
+
+            if (Enum.TryParse<Status>(status.Replace("-", "_"), out var parsedStatus))
             {
                 return userTasks.FindAll(x => x.taskStatus == parsedStatus);
             }
@@ -107,7 +106,21 @@ namespace TaskTracker.Repository
 
         public List<string> HelpComands()
         {
-            throw new NotImplementedException();
+                return new List<string>
+                {
+                    "========== Available Commands ==========",
+                    "add <description>                - Add a new task",
+                    "update <id> <new description>    - Update an existing task",
+                    "delete <id>                      - Delete a task by ID",
+                    "mark-in-progress <id>            - Mark a task as 'in-progress'",
+                    "mark-done <id>                   - Mark a task as 'done'",
+                    "list                             - List all tasks",
+                    "list todo                        - List tasks with status 'todo'",
+                    "list in-progress                 - List tasks with status 'in-progress'",
+                    "list done                        - List tasks with status 'done'",
+                    "help                             - Show this help message",
+                    "exit                             - Exit the application"
+                };
         }
 
         public async Task<UserTask?> SetStatus(int id, string status)
@@ -128,7 +141,7 @@ namespace TaskTracker.Repository
                     return null;
                 }
 
-                if (Enum.TryParse<Status>(status, out var parsedStatus))
+                if (Enum.TryParse<Status>(status.Replace("-", "_"), out var parsedStatus))
                 {
                     task.taskStatus = parsedStatus;
                     await UpdateJson(userTasks);
@@ -166,6 +179,7 @@ namespace TaskTracker.Repository
             task.description = description;
 
             await UpdateJson(userTasks);
+
             return task;
         }
 
