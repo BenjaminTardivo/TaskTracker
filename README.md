@@ -3,6 +3,8 @@
   A simple task manager in terminal, made in .NET 8.
   Allows you to add, update, erease, list & change the state of tasks saved in a local JSON file
 
+  Based on: https://roadmap.sh/projects/task-tracker
+
 
 ## Instalation
 
