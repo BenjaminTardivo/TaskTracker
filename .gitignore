@@ -4,3 +4,7 @@
 
 #Data
 /taskdata.json
+
+#Build output
+/bin
+/obj
